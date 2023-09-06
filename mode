@@ -1,0 +1,7 @@
+x<-c(12,34,76,879,98,99,65,98)
+getmode<-function(x){
+  uniqx<-unique(x)
+  uniqx[which.max(tabulate(match(x,uniqx)))]
+}
+result<-getmode(x)
+print(result)
